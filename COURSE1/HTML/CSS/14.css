@@ -2,6 +2,11 @@
     text-decoration: none;
 }
 
+a:hover {
+   font-size: 30px;
+   background-color: rgb(226, 242, 123);
+}
+
 body {
     background-color: aqua;
     font-family: Arial, sans-serif;
@@ -37,10 +42,10 @@ input[type="submit"] {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(30, 40, 50);
+    background-color: rgb(28, 119, 210);
 }
