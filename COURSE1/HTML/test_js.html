@@ -55,6 +55,14 @@
 
 <script>
 
+   class Student {
+
+    constructor(name, rollNo) {
+      this.name = name;
+      this.rollNo = rollNo;
+    }
+  }
+
   class Teacher {
 
     constructor(name, exp) {
@@ -70,6 +78,9 @@
 
   let teacher1 = new Teacher("Dan", 12);
   teacher1.f1();
+
+  teacher1 instanceof  Teacher ; // true
+  teacher1 instanceof  Student ; // false
 
 </script>
 
