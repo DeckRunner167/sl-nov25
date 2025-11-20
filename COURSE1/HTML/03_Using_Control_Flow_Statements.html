@@ -1,0 +1,51 @@
+<html>
+<script>
+    // single line comment
+    /* multiline 
+    comment
+    */
+
+    console.log("While Loop:");
+
+    let counter = 3;
+
+    while (counter > 0) {
+        console.log(counter);
+        counter = counter - 2;
+    }
+
+
+    console.log("Do...While Loop:");
+    let doWhileCounter = 2;
+
+    do {
+        console.log(doWhileCounter);
+        doWhileCounter--;
+    } while (doWhileCounter > 0);
+
+
+    console.log("For with break Statement:");  // 1 2 4 5
+    for (let i = 1; i <= 5; i++) {
+
+        if (i === 3) {
+            continue;
+        }
+
+        console.log(i);
+    }
+
+
+    console.log("Continue Statement:");
+    for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
+            continue;
+        }
+        console.log(i);
+    }
+
+
+</script>
+
+
+
+</html>
