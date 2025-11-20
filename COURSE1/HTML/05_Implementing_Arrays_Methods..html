@@ -1,0 +1,85 @@
+<script>
+
+
+    // Explore Array Properties
+
+    // Initialize an array and highlight the length property:
+    let myArray = [1, 2, 3, 4, 5];
+    console.log("Array Length:", myArray.length);
+    // Display the array's constructor property:
+    console.log("Array Constructor:", myArray.constructor);
+    // Access the prototype property of the array:
+    console.log("Array Prototype:", myArray.constructor.prototype);
+
+    //Utilize Array Methods
+    //Demonstrate the push method to add elements to the end of the array:
+    myArray.push(6, 7);
+    console.log("Array aft er push:", myArray);
+
+    // Use the pop method to remove the last element:
+    let poppedElement = myArray.pop();
+    console.log("Popped Element:", poppedElement);
+    console.log("Array aft er pop:", myArray);
+
+    // Apply the shift  method to remove the fi rst element:
+    let shiftedElement = myArray.shift();
+    console.log("Shift ed Element:", shiftedElement);
+    console.log("Array aft er shift :", myArray);
+
+    // Uti lize the unshift  method to add elements to the beginning of the array:
+    myArray.unshift(0, -1);
+    console.log("Array aft er unshift :", myArray);
+
+    // Create a new array and demonstrate the concat method to merge arrays:
+    let anotherArray = [8, 9, 10];
+    let mergedArray = myArray.concat(anotherArray);
+
+    console.log("Merged Array:", mergedArray);
+    // Use the join method to convert the array elements into a string:
+    let joinedString = myArray.join(" | ");
+
+    console.log("Joined String:", joinedString);
+    // Employ the slice method to extract a porti on of the array:
+    let slicedArray = mergedArray.slice(2, 6);
+
+    console.log("Sliced Array:", slicedArray);
+    // Highlight the splice method to add and remove elements at a specifi c positi on:
+    let splicedElements = mergedArray.splice(2, 3, "a", "b", "c");
+    console.log("Spliced Elements:", splicedElements);
+    console.log("Array aft er splice:", mergedArray);
+
+
+    // Implement Iterator Methods
+    // Use a traditional for-loop to iterate through the array:
+    console.log("For-Loop Iterati on:");
+    for (let i = 0; i < mergedArray.length; i++) {
+        console.log(mergedArray[i]);
+    }
+
+    // Apply the forEach method for a cleaner iterati on:
+    console.log("forEach Iterati on:");
+    mergedArray.forEach(element => {
+        console.log(element);
+    });
+
+    // Uti lize the map method to transform array elements:
+    let squaredValues = mergedArray.map(element => element * element);
+    console.log("Squared Values:", squaredValues);
+
+    // Demonstrate the filter method to create a new array with selected elements:
+    let filteredArray = mergedArray.filter(element => element % 2 === 0);
+    console.log("Filtered Array (Even Numbers):", filteredArray);
+
+    // Apply the reduce method to accumulate array elements:
+    let sum = mergedArray.reduce((accumulator, currentValue) => accumulator +
+        currentValue, 0);
+    console.log("Sum of Array Elements:", sum);
+
+    //validation
+    //Verify the correctness of array operati ons and iterator methods by logging the final state of the array and the results of each method.
+    console.log("Final State of the Array:", mergedArray);
+    console.log("Validati on Complete!");
+
+
+
+</script>
